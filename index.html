@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cajero Automático</title>
+</head>
+
+<body>
+    <img src="https://1000marcas.net/wp-content/uploads/2019/12/BBVA-logo.png" alt="BBVA Bancomer" width="350"
+        height="200">
+    <div id="cajero">
+        <h2>Cajero ATM</h2>
+        <label for="cuentas">Selecciona una cuenta:</label>
+        <select id="cuentas">
+            <option value="0">Mamá</option>
+            <option value="1">Papá</option>
+            <option value="2">Rodrigo</option>
+        </select><br><br>
+
+        <label for="password">Ingresa tu contraseña:</label>
+        <input type="password" id="password"><br><br>
+
+        <button onclick="autenticar()">Ingresar</button>
+
+        <div id="acciones" style="display: none; margin-top: 20px;">
+            <h3>Selecciona una acción:</h3>
+            <button onclick="consultarSaldo()">Consultar Saldo</button><br><br>
+            <button onclick="ingresarMonto()">Ingresar Monto</button><br><br>
+            <button onclick="retirarMonto()">Retirar Monto</button><br><br>
+            <button onclick="transferir()">Transferir a otra cuenta</button>
+        </div>
+
+        <div id="resultado" style="margin-top: 20px;"></div>
+    </div>
+    <img src="https://media.tenor.com/QLkF0tocToIAAAAC/money-cat.gif" alt="ATM" width="150" height="150">
+    <script src="script.js"></script>
+</body>
+
+</html>
